@@ -1,6 +1,7 @@
 import client from '../db/client.mjs';
 import nodemailer from 'nodemailer';
 import { ObjectId } from 'mongodb';
+import validateInputs from './validateInputs';
 
 const getLocations = async (req, res) => {
   const db = client.db('main').collection('tourLocations');
@@ -161,27 +162,32 @@ const getTour = async (req, res) => {
 
 const bookTour = async (req, res) => {
   const { fullName, phone, email, plan } = req.body;
-  const collection = client.db('main').collection('bookedTours');
-  try {
-    await collection.insertOne({ fullName, phone, email, plan });
 
-    let transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_SENDER_USER,
-        pass: process.env.EMAIL_SENDER_PASS
-      },
-    });
-    await transporter.sendMail({
-      from: '"Traveler" <traveler.travelagency@gmail.com>',
-      to: email,
-      subject: `Hello, ${fullName}! Your tour has been booked.`,
-      text: "Placeholder Text",
-      html: "<b>Placeholder Text</b>"
-    });
-    
-    res.status(200).json({ isBooked: true });
-  } catch(err) {
+  if (validateInputs(fullName, phone, email).values().every(val => val)) {
+    const collection = client.db('main').collection('bookedTours');
+    try {
+      await collection.insertOne({ fullName, phone, email, plan });
+
+      let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: process.env.EMAIL_SENDER_USER,
+          pass: process.env.EMAIL_SENDER_PASS
+        },
+      });
+      await transporter.sendMail({
+        from: '"Traveler" <traveler.travelagency@gmail.com>',
+        to: email,
+        subject: `Hello, ${fullName}! Your tour has been booked.`,
+        text: "Placeholder Text",
+        html: "<b>Placeholder Text</b>"
+      });
+      
+      res.status(200).json({ isBooked: true });
+    } catch(err) {
+      res.status(400).json({ isBooked: false });
+    }
+  } else {
     res.status(400).json({ isBooked: false });
   }
 }
