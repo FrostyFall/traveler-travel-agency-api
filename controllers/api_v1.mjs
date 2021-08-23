@@ -1,7 +1,7 @@
 import client from '../db/client.mjs';
 import nodemailer from 'nodemailer';
 import { ObjectId } from 'mongodb';
-import validateInputs from './validateInputs';
+import validateInputs from './validateInputs.mjs';
 
 const getLocations = async (req, res) => {
   const db = client.db('main').collection('tourLocations');
