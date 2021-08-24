@@ -162,8 +162,8 @@ const getTour = async (req, res) => {
 
 const bookTour = async (req, res) => {
   const { fullName, phone, email, plan } = req.body;
-
-  if (validateInputs(fullName, phone, email).values().every(val => val)) {
+  
+  if (Object.values(validateInputs(fullName, phone, email)).every(val => val)) {
     const collection = client.db('main').collection('bookedTours');
     try {
       await collection.insertOne({ fullName, phone, email, plan });
