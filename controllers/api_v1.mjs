@@ -1,178 +1,111 @@
-import client from '../db/client.mjs';
-import nodemailer from 'nodemailer';
-import { ObjectId } from 'mongodb';
-import validateInputs from './validateInputs.mjs';
+import nodemailer from "nodemailer";
+import validateInputs from "./validateInputs.mjs";
+import fs from "fs";
+
+const locationsRawdata = fs.readFileSync("./db/locations.json");
+const locations = JSON.parse(locationsRawdata);
+
+const agencyReviewsRawdata = fs.readFileSync("./db/agency_reviews.json");
+const agencyReviews = JSON.parse(agencyReviewsRawdata);
+
+const popToursRawdata = fs.readFileSync("./db/pop_tours.json");
+const popularTours = JSON.parse(popToursRawdata);
+
+const allToursRawdata = fs.readFileSync("./db/all_tours.json");
+const allTours = JSON.parse(allToursRawdata);
+
+const allToursPrevsRawdata = fs.readFileSync("./db/all_tours_prevs.json");
+const allToursPrevs = JSON.parse(allToursPrevsRawdata);
 
 const getLocations = async (req, res) => {
-  const db = client.db('main').collection('tourLocations');
-  const cursor = await db.find({});
-  const locations = await cursor.toArray();
-  await cursor.close();
-  
-  res.status(200).json(locations);
+  const locs = locations;
+
+  res.status(200).json(locs);
 };
 
 const getAgencyReviews = async (req, res) => {
-  const db = client.db('main').collection('agencyReviews');
-  const cursor = await db.find().limit(3);
-  const reviews = await cursor.toArray();
-  await cursor.close();
+  const reviews = agencyReviews;
 
   res.status(200).json(reviews);
 };
 
 const getPopTours = async (req, res) => {
-  const db = client.db('main').collection('popToursPreviews');
-  const cursor = await db.find().limit(3);
-  const popularTours = await cursor.toArray();
-  await cursor.close();
-  
-  res.status(200).json(popularTours);
+  const tours = popularTours;
+
+  res.status(200).json(tours);
 };
 
 const getAllTours = async (req, res) => {
-  let { skip = 0, minPrice = 0, maxPrice = 999999, scores = [1, 2, 3, 4, 5], country = '' } = req.query;
-  scores = Array.from(scores).map(score => parseInt(score, 10));
-  if (country.length !== 0) country = country.split(',');
+  let {
+    skip = 0,
+    minPrice = 0,
+    maxPrice = 999999,
+    scores = [1, 2, 3, 4, 5],
+    country = "",
+  } = req.query;
+  scores = Array.from(scores).map((score) => parseInt(score, 10));
+  if (country.length !== 0) country = country.split(",");
 
-  let pipeline = [];
-  let countPipeline = [];
+  const prevs = allToursPrevs;
+  let matched;
+  let matchedCount;
+
   if (country.length > 0) {
-    pipeline = [
-      {
-        $project: {
-          floorScore: {$floor: "$score"}, title: 1, country: 1, city: 1, score: 1, fromPrice: 1, imgURL: 1, fullDetails: 1
-        }
-      },
-      {
-        $match: {
-          fromPrice: { 
-            $gte: parseInt(minPrice, 10), $lte: parseInt(maxPrice, 10) 
-          },
-          country: {
-            $in: country
-          },
-          floorScore: {$in: scores}
-        }
-      },
-      {
-        $skip: parseInt(skip, 10)
-      },
-      {
-        $limit: 6
-      },
-      {
-        $project: {
-          floorScore: 0
-        }
-      }
-    ];
-    countPipeline = [
-      {
-        $project: {
-          floorScore: {$floor: "$score"}, title: 1, country: 1, city: 1, score: 1, fromPrice: 1, imgURL: 1, fullDetails: 1
-        }
-      },
-      {
-        $match: {
-          fromPrice: { 
-            $gte: parseInt(minPrice, 10), $lte: parseInt(maxPrice, 10) 
-          },
-          country: {
-            $in: country
-          },
-          floorScore: {$in: scores}
-        }
-      },
-      {
-        $group: { _id: null, count: { $sum: 1 } }
-      }
-    ]
+    matched = prevs.filter((el) => {
+      return (
+        el.fromPrice >= parseInt(minPrice, 10) &&
+        el.fromPrice <= parseInt(maxPrice, 10) &&
+        country.includes(el.country) &&
+        scores.includes(el.floorScore)
+      );
+    });
   } else {
-    pipeline = [
-      {
-        $project: {
-          floorScore: {$floor: "$score"}, title: 1, country: 1, city: 1, score: 1, fromPrice: 1, imgURL: 1, fullDetails: 1
-        }
-      },
-      {
-        $match: {
-          fromPrice: { 
-            $gte: parseInt(minPrice, 10), $lte: parseInt(maxPrice, 10) 
-          },
-          floorScore: {$in: scores}
-        }
-      },
-      {
-        $skip: parseInt(skip, 10)
-      },
-      {
-        $limit: 6
-      },
-      {
-        $project: {
-          floorScore: 0
-        }
-      }
-    ];
-    countPipeline = [
-      {
-        $project: {
-          floorScore: {$floor: "$score"}, title: 1, country: 1, city: 1, score: 1, fromPrice: 1, imgURL: 1, fullDetails: 1
-        }
-      },
-      {
-        $match: {
-          fromPrice: { 
-            $gte: parseInt(minPrice, 10), $lte: parseInt(maxPrice, 10) 
-          }, 
-          floorScore: {$in: scores}
-        }
-      },
-      {
-        $group: { _id: null, count: { $sum: 1 } }
-      }
-    ]
+    matched = prevs.filter((el) => {
+      return (
+        el.fromPrice >= parseInt(minPrice, 10) &&
+        el.fromPrice <= parseInt(maxPrice, 10) &&
+        scores.includes(el.floorScore)
+      );
+    });
   }
+  matched = matched.slice(parseInt(skip, 10));
+  matched = matched.slice(0, 6);
 
-  const db = client.db('main').collection('allToursPreviews');
-  const cursor = await db.aggregate(pipeline);
-  const tours = await cursor.toArray();
+  matchedCount = matched.length;
 
-  const countCursor = await db.aggregate(countPipeline);
-  const countArray = await countCursor.toArray();
-  const documentsCount = countArray[0]?.count ?? 0;
+  const docsCount = prevs.length;
 
-  const retrievedDocs = tours.length;
-
-  await cursor.close();
-  await countCursor.close();
-
-  res.status(200).json({ docs: tours, documentsCount, retrievedDocs });
+  res.status(200).json({
+    docs: matched,
+    documentsCount: docsCount,
+    retrievedDocs: matchedCount,
+  });
 };
 
 const getTour = async (req, res) => {
   const { tourId } = req.params;
-  const db = client.db('main').collection('allTours');
-  const tour = await db.findOne({ _id: ObjectId(tourId) }, { projection: { _id: 0 } });
+  const tours = allTours;
+  const tour = tours.find((tour) => tour.id === Number(tourId));
 
-  if (tour) res.status(200).json({ ...tour, isFound: true })
+  if (tour) res.status(200).json({ ...tour, isFound: true });
   else res.status(400).json({ isFound: false });
 };
 
 const bookTour = async (req, res) => {
   const { fullName, phone, email, plan } = req.body;
-  
-  if (Object.values(validateInputs(fullName, phone, email)).every(val => val)) {
-    const collection = client.db('main').collection('bookedTours');
+
+  if (
+    Object.values(validateInputs(fullName, phone, email)).every((val) => val)
+  ) {
+    const collection = client.db("main").collection("bookedTours");
     try {
       await collection.insertOne({ fullName, phone, email, plan });
 
       let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: "gmail",
         auth: {
           user: process.env.EMAIL_SENDER_USER,
-          pass: process.env.EMAIL_SENDER_PASS
+          pass: process.env.EMAIL_SENDER_PASS,
         },
       });
       await transporter.sendMail({
@@ -180,16 +113,23 @@ const bookTour = async (req, res) => {
         to: email,
         subject: `Hello, ${fullName}! Your tour has been booked.`,
         text: "Placeholder Text",
-        html: "<b>Placeholder Text</b>"
+        html: "<b>Placeholder Text</b>",
       });
-      
+
       res.status(200).json({ isBooked: true });
-    } catch(err) {
+    } catch (err) {
       res.status(400).json({ isBooked: false });
     }
   } else {
     res.status(400).json({ isBooked: false });
   }
-}
+};
 
-export { getLocations, getAgencyReviews, getPopTours, getAllTours, getTour, bookTour };
+export {
+  getLocations,
+  getAgencyReviews,
+  getPopTours,
+  getAllTours,
+  getTour,
+  bookTour,
+};

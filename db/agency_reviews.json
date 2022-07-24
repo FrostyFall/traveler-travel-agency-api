@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "author": "John Doe",
+    "country": "United States",
+    "review": "Ad aute velit proident nisi consectetur commodo. Sunt laboris laboris ea eu. Do eu reprehenderit consequat eiusmod culpa labore esse sint veniam laboris sint."
+  },
+  {
+    "id": 2,
+    "author": "Jane Doe",
+    "country": "Italy",
+    "review": "Ad aute velit proident nisi consectetur commodo. Sunt laboris laboris ea eu."
+  },
+  {
+    "id": 3,
+    "author": "Jessica Doe",
+    "country": "France",
+    "review": "Ad aute velit proident nisi consectetur commodo. Sunt laboris laboris ea eu. Do eu reprehenderit consequat eiusmod culpa labore esse."
+  }
+]

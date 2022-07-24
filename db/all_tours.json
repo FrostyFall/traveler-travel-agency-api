@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1,
+    "title": "Central Park",
+    "city": "New York City",
+    "country": "United States",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/central-park/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/central-park/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/central-park/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/central-park/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Colosseum",
+    "city": "Rome",
+    "country": "Italy",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/colosseum/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/colosseum/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/colosseum/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/colosseum/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Disneyland Park",
+    "city": "San Francisco",
+    "country": "United States",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/disneyland-park/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/disneyland-park/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/disneyland-park/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/disneyland-park/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Eiffel Tower",
+    "city": "Paris",
+    "country": "France",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/eiffel-tower/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/eiffel-tower/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/eiffel-tower/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/eiffel-tower/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Empire State Building",
+    "city": "New York City",
+    "country": "United States",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/empire-state-building/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/empire-state-building/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/empire-state-building/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/empire-state-building/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Golden Gate Bridge",
+    "city": "San Francisco",
+    "country": "United States",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/golden-gate-bridge/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/golden-gate-bridge/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/golden-gate-bridge/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/golden-gate-bridge/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Grand Canyon",
+    "city": "Nevada",
+    "country": "United States",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/grand-canyon/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/grand-canyon/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/grand-canyon/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/grand-canyon/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Grand Central Terminal",
+    "city": "New York City",
+    "country": "United States",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/grand-central-terminal/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/grand-central-terminal/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/grand-central-terminal/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/grand-central-terminal/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Great Wall of China",
+    "city": "Somewhere in China",
+    "country": "China",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/great-wall-of-china/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/great-wall-of-china/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/great-wall-of-china/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/great-wall-of-china/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Louvre Museum",
+    "city": "Paris",
+    "country": "France",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/louvre-museum/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/louvre-museum/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/louvre-museum/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/louvre-museum/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Statue of Libery",
+    "city": "New York City",
+    "country": "United States",
+    "experience": {
+      "text": "Elit irure deserunt eu minim quis pariatur. Do labore aliqua incididunt reprehenderit veniam deserunt laborum. Pariatur velit ea laboris nisi irure cillum ad laboris magna. Do adipisicing sit ex deserunt. Consequat veniam sit quis ea commodo ut.",
+      "imgURL": "https://traveler-travel-agency.herokuapp.com/images/statue-of-liberty/experience.jpg"
+    },
+    "imgURLs": [
+      "https://traveler-travel-agency.herokuapp.com/images/statue-of-liberty/view-1.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/statue-of-liberty/view-2.jpg",
+      "https://traveler-travel-agency.herokuapp.com/images/statue-of-liberty/view-3.jpg"
+    ],
+    "prices": {
+      "standard": {
+        "price": 129,
+        "features": "Standard features"
+      },
+      "premium": {
+        "price": 149,
+        "features": "Premium features"
+      }
+    },
+    "reviews": [
+      {
+        "title": "Decent",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 4.2
+      },
+      {
+        "title": "Good",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 3
+      },
+      {
+        "title": "Awesome",
+        "review": "Dolor dolor tempor qui Lorem elit.",
+        "score": 5
+      }
+    ]
+  }
+]

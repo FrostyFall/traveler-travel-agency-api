@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "title": "Central Park",
+    "country": "United States",
+    "city": "New York City",
+    "score": 4.3,
+    "floorScore": 4,
+    "fromPrice": 129,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/central-park/preview.jpg",
+    "fullDetails": "1"
+  },
+  {
+    "id": 2,
+    "title": "Colosseum",
+    "country": "Italy",
+    "city": "Rome",
+    "score": 3.7,
+    "floorScore": 3,
+    "fromPrice": 119,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/central-park/preview.jpg",
+    "fullDetails": "2"
+  },
+  {
+    "id": 3,
+    "title": "Disneyland Park",
+    "city": "San Francisco",
+    "country": "United States",
+    "score": 4,
+    "floorScore": 4,
+    "fromPrice": 99,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/disneyland-park/preview.jpg",
+    "fullDetails": "3"
+  },
+  {
+    "id": 4,
+    "title": "Eiffel Tower",
+    "city": "Paris",
+    "country": "France",
+    "score": 3.2,
+    "floorScore": 3,
+    "fromPrice": 79,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/eiffel-tower/preview.jpg",
+    "fullDetails": "4"
+  },
+  {
+    "id": 5,
+    "title": "Empire State Building",
+    "city": "New York City",
+    "country": "United States",
+    "score": 4.9,
+    "floorScore": 4,
+    "fromPrice": 149,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/empire-state-building/preview.jpg",
+    "fullDetails": "5"
+  },
+  {
+    "id": 6,
+    "title": "Golden Gate Bridge",
+    "city": "San Francisco",
+    "country": "United States",
+    "score": 3.7,
+    "floorScore": 3,
+    "fromPrice": 179,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/golden-gate-bridge/preview.jpg",
+    "fullDetails": "6"
+  },
+  {
+    "id": 7,
+    "title": "Grand Canyon",
+    "city": "Nevada",
+    "country": "United States",
+    "score": 2.7,
+    "floorScore": 2,
+    "fromPrice": 189,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/grand-canyon/preview.jpg",
+    "fullDetails": "7"
+  },
+  {
+    "id": 8,
+    "title": "Grand Central Terminal",
+    "city": "New York City",
+    "country": "United States",
+    "score": 3.1,
+    "floorScore": 3,
+    "fromPrice": 119,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/grand-central-terminal/preview.jpg",
+    "fullDetails": "8"
+  },
+  {
+    "id": 9,
+    "title": "Great Wall of China",
+    "city": "Somewhere in China",
+    "country": "China",
+    "score": 2.3,
+    "floorScore": 2,
+    "fromPrice": 189,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/great-wall-of-china/preview.jpg",
+    "fullDetails": "9"
+  },
+  {
+    "id": 10,
+    "title": "Louvre Museum",
+    "city": "Paris",
+    "country": "France",
+    "score": 3.6,
+    "floorScore": 3,
+    "fromPrice": 89,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/louvre-museum/preview.jpg",
+    "fullDetails": "10"
+  },
+  {
+    "id": 11,
+    "title": "Statue of Libery",
+    "city": "New York City",
+    "country": "United States",
+    "score": 4.2,
+    "floorScore": 4,
+    "fromPrice": 49,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/statue-of-liberty/preview.jpg",
+    "fullDetails": "11"
+  }
+]

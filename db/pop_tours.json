@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Central Park",
+    "country": "United States",
+    "city": "New York City",
+    "score": 4.3,
+    "fromPrice": 129,
+    "imgURL": "http://127.0.0.1:8080/images/central-park/preview.jpg",
+    "fullDetails": "1"
+  },
+  {
+    "id": 2,
+    "title": "Disneyland Park",
+    "city": "San Francisco",
+    "country": "United States",
+    "score": 4,
+    "floorScore": 4,
+    "fromPrice": 99,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/disneyland-park/preview.jpg",
+    "fullDetails": "3"
+  },
+  {
+    "id": 3,
+    "title": "Empire State Building",
+    "city": "New York City",
+    "country": "United States",
+    "score": 4.9,
+    "floorScore": 4,
+    "fromPrice": 149,
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/empire-state-building/preview.jpg",
+    "fullDetails": "5"
+  }
+]
