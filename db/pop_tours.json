@@ -6,7 +6,7 @@
     "city": "New York City",
     "score": 4.3,
     "fromPrice": 129,
-    "imgURL": "http://127.0.0.1:8080/images/central-park/preview.jpg",
+    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/central-park/preview.jpg",
     "fullDetails": "1"
   },
   {
