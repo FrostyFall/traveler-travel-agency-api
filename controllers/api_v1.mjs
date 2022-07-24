@@ -97,10 +97,7 @@ const bookTour = async (req, res) => {
   if (
     Object.values(validateInputs(fullName, phone, email)).every((val) => val)
   ) {
-    const collection = client.db("main").collection("bookedTours");
     try {
-      await collection.insertOne({ fullName, phone, email, plan });
-
       let transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
