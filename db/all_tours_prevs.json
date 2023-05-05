@@ -7,7 +7,7 @@
     "score": 4.3,
     "floorScore": 4,
     "fromPrice": 129,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/central-park/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/central-park/preview.jpg",
     "fullDetails": "1"
   },
   {
@@ -18,7 +18,7 @@
     "score": 3.7,
     "floorScore": 3,
     "fromPrice": 119,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/colosseum/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/colosseum/preview.jpg",
     "fullDetails": "2"
   },
   {
@@ -29,7 +29,7 @@
     "score": 4,
     "floorScore": 4,
     "fromPrice": 99,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/disneyland-park/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/disneyland-park/preview.jpg",
     "fullDetails": "3"
   },
   {
@@ -40,7 +40,7 @@
     "score": 3.2,
     "floorScore": 3,
     "fromPrice": 79,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/eiffel-tower/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/eiffel-tower/preview.jpg",
     "fullDetails": "4"
   },
   {
@@ -51,7 +51,7 @@
     "score": 4.9,
     "floorScore": 4,
     "fromPrice": 149,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/empire-state-building/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/empire-state-building/preview.jpg",
     "fullDetails": "5"
   },
   {
@@ -62,7 +62,7 @@
     "score": 3.7,
     "floorScore": 3,
     "fromPrice": 179,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/golden-gate-bridge/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/golden-gate-bridge/preview.jpg",
     "fullDetails": "6"
   },
   {
@@ -73,7 +73,7 @@
     "score": 2.7,
     "floorScore": 2,
     "fromPrice": 189,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/grand-canyon/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/grand-canyon/preview.jpg",
     "fullDetails": "7"
   },
   {
@@ -84,7 +84,7 @@
     "score": 3.1,
     "floorScore": 3,
     "fromPrice": 119,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/grand-central-terminal/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/grand-central-terminal/preview.jpg",
     "fullDetails": "8"
   },
   {
@@ -95,7 +95,7 @@
     "score": 2.3,
     "floorScore": 2,
     "fromPrice": 189,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/great-wall-of-china/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/great-wall-of-china/preview.jpg",
     "fullDetails": "9"
   },
   {
@@ -106,7 +106,7 @@
     "score": 3.6,
     "floorScore": 3,
     "fromPrice": 89,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/louvre-museum/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/louvre-museum/preview.jpg",
     "fullDetails": "10"
   },
   {
@@ -117,7 +117,7 @@
     "score": 4.2,
     "floorScore": 4,
     "fromPrice": 49,
-    "imgURL": "https://traveler-travel-agency.herokuapp.com/images/statue-of-liberty/preview.jpg",
+    "imgURL": "https://wandering-garment-eel.cyclic.app/images/statue-of-liberty/preview.jpg",
     "fullDetails": "11"
   }
 ]
